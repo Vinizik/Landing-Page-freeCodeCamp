@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Lost Ark Landing Page</title> 
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+      <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/b/be/Lost_Ark_logo.png" alt="logo"/>
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href=#info>Info</a></li>
+          <li><a class="nav-link" href=#form>Register</a></li>
+          <li><a class="nav-link" href=#download>Download</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div class="container">
+          <section id="info">
+            <h1>About Lost Ark</h1>
+            <p>Lost Ark is an MMORPG that combines the fast paced gameplay found in action RPGs like Diablo 3 with the sense of discovery and immersion found in open world MMORPGs. The game features both open world environments and instanced raids like those found in traditional MMOs. Players will even be able to discover unique islands in Lost Ark as they explore the World Map abroad their own ships. While the game launched in South Korea back in 2018, the Western launch happened years later in February, 2022.<p>
+            <h2>Lost Ark Key Features</h2>
+            <ul>
+              <li><span>Set Sail for Adventure –</span> explore the world on your own Ark to discover unique areas or hunt for treasure!</li>
+              <li><span>15 Playable Classes –</span> Play as a Warrior, Martial Artist, Gunner, Mage, or Assassin. Each class has multiple job advance options.</li>
+              <li><span>Raid Bosses and Cinematic Dungeons –</span> team up to defeat powerful bosses on interactive battlegrounds.</li>
+              <li><span>The Colosseum –</span> challenge other players to combat in 1v1 or 3v3 PvP matches.</li>
+              <li><span>Tripod Skill System –</span> mix different skill elements to perform different variants of the same base skills.</li>
+              <li><span>Mini Games –</span> take a break at the local tavern and challenge players to a monster card game or keg drinking contest.</li>
+              <li><span>Live Your Life – </span>mine, fish, dig for artifacts, chop trees, and practice other life skills to collect valuable resources.</li>
+              <li><span>Island Ownership – </span>conquer and manage your own island as you see fit.</li>
+            </ul>
+            <h2>Lost Ark Featured Video</h2>
+            <iframe width="800" height="500" src="https://www.youtube.com/embed/iwnk9XrhN54?si=AFnHu-Ur8p3J_2g3" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </section>
+        </div>
+        <div class="registration">
+        <section id="form-section">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <label for="login">Login</label>
+          <input id="login" type="text" required placeholder="  Login"/>
+          <label for="password">Password</label>
+          <input id="password" type="password" required placeholder="  Password"/>
+          <label for="email">E-mail</label>
+          <input id="email" type="email" name="email" required placeholder="  E-mail"/>
+          <input id="submit" type="submit" value="Register now!"/>
+          </form>
+          </section>
+          </div>
+          <div class="footer">
+            <footer>
+              <img src="https://d3irh93dd5ckql.cloudfront.net/statics/2023-08-22/images/ESRB-M.svg" width="300"/>
+              <input id="download" type="submit" value="Play Now!">
+            </footer>
+          </div>
+        </main>
+    </body>
+<script>
+  var downloadButton = document.getElementById("download");
+
+  downloadButton.addEventListener("click", function() {
+    window.location.href = "https://www.playlostark.com/en-us";
+  });
+</script>
+</html>
